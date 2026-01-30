@@ -26,3 +26,13 @@ print(f"number of embeddings : {len(embeddings)}")
 
 
 
+
+# Save to a vector db
+vector_db = Chroma.from_documents(
+    documents=chunks,
+    embedding=embedding_model,
+    persist_directory ="../data/vectordb/chroma_db"
+) 
+
+vector_db.persist()
+print("vector db created")

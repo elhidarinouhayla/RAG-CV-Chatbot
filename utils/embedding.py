@@ -37,6 +37,27 @@ def save_vectordb():
     return vector_db
  
 
+    
+prompt = """You are an expert assistant specialized in CV analysis and recruitment.
+Answer ONLY based on the information from the CV provided below.
+If the information is not in the CV, say exactly "I don't have this information in the CV".
+
+Context:
+{context}
+
+Question: {question}
+
+Response:
+- Answer in English, clearly and professionally
+- Be precise and factual
+- Cite relevant information from the CV
+- If you need to make a deduction, indicate it clearly
+- Never invent information
+
+"""
+    
+
+
 
 
 def configuration(vector_db):
@@ -56,7 +77,7 @@ def configuration(vector_db):
 db = save_vectordb()
 reponse = configuration(db)
 
-question = "Quelles sont les coordonnees ou les informations de contact mentionnees dans le document ?"
+question = "What are my technical skills??"
 answer = reponse.invoke({"query": question})
 
 print("chatbot response :")

@@ -5,11 +5,15 @@ An intelligent chatbot that answers questions about your CV using Retrieval Augm
 
 
  Objective
+ 
 Build a chatbot that:
 
 ✅ Answers questions about your CV
+
 ✅ Uses a free LLM (Gemini 2.5 Flash )
-✅ Implements RAG (Retrieval Augmented Generation) 
+
+✅ Implements RAG (Retrieval Augmented Generation)
+
 ✅ Uses a vector database (ChromaDB) 
 
 

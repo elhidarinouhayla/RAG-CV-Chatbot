@@ -97,6 +97,7 @@ RAG-CV-CHATBOT/
 - "Where did I work as a Data Scientist?"
 ```
 
+
 ** Should NOT have answers (not in CV):**
 ```
 - "Do I have experience in cooking?"
